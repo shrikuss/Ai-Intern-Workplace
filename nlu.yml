@@ -1,0 +1,545 @@
+version: "3.1"
+
+nlu:                                                                                                   
+- intent: greet
+  examples: |
+    - Hello!
+    - Hi there!
+    - Good morning
+    - Good evening
+    - Good afternoon
+    - Hey
+    - Hi, how are you?
+    - Hi, what's up?
+    - Greetings
+    - Hiya
+    - Heyya
+    - Hi
+    - Let’s go
+     - heyy
+     - Hii
+      - Hello there!
+
+- intent: goodbye
+  examples: |
+    - Bye!
+    - Goodbye!
+    - See you later!
+    - Take care!
+    - Bye bye!
+    - Have a nice day!
+    - Have a great day!
+    - Until next time!
+    - So long!
+    - See you soon!
+    - See you around! 
+    - good by
+    - Adios!
+    - Talk to you later!
+    - Signing off!
+
+- intent: sizes
+  examples: |
+    - What sizes are available for your artwork?
+    - Can you provide information about the dimensions of the paintings?
+    - What are the standard sizes for your artwork?
+    - I'm looking for paintings in larger sizes.
+    - Do you offer custom sizes for your artwork?
+    - Can you tell me the dimensions of this artwork?
+    - What size options do you have?
+    - Are your paintings available in various sizes?
+    - How big are your artworks usually?
+    - Do you have small-sized paintings?
+    - Could you provide details about the sizes of your artworks?
+    - What is the largest size you offer?
+    - Are your paintings available in different dimensions?
+    - Can you recommend a size for my wall?
+    - I need a painting that fits a specific space. What size should I look for?
+    - sizes available?
+    - what are the sizes?
+
+- intent: types_of_art
+  examples: |
+    - What are the different types of art?
+    - Can you tell me about various art forms?
+    - I'm interested in learning about different types of art.
+    - What are some popular forms of art?
+    - Can you explain the different categories of art?
+    - I want to know more about art styles.
+    - What kinds of art can I explore?
+    - Can you list some art genres?
+    - Tell me about the various art movements.
+    - I'm curious about the diversity in art.
+    - Are there specific types of art I should be aware of?
+    - Can you elaborate on the classifications of art?
+    - What are the main branches of art?
+    - I'd like to explore different artistic expressions.
+    - Can you provide an overview of art types?
+    - Types of art?
+    - Types?
+
+- intent: price_range
+  examples: |
+    - What is the price range for your artwork?
+    - Can you provide me with the price range?
+    - How much do your artworks typically cost?
+    - What are the price ranges for different types of artwork?
+    - I'm looking for artwork in a specific price range.
+    - What's the price range for paintings in your collection?
+    - Can you tell me the price range for sculptures?
+    - What's the highest price range for your artwork?
+    - Do you have any artwork in the lower price range?
+    - Could you give me an idea of the price range for your pieces?
+    - What's the average price range for your artwork?
+    - Are there any discounts available within the price range?
+    - Can I find artwork within a budget-friendly price range?
+    - What's the starting price range for your artwork?
+    - Is there a wide price range for your collection?
+    - Could you specify the price range for limited edition pieces?
+    -Price?
+    -price range?
+    -range?
+- intent: top_selling_genre
+  examples: |
+    - What are the top selling genres?
+    - Can you tell me the most popular genres?
+    - Which genres sell the most?
+    - What types of art are currently trending?
+    - I'm curious about the top selling genres.
+    - Show me the most popular art genres.
+    - What are the best-selling art styles?
+    - Which genres are in high demand?
+    - Can you recommend the hottest art genres?
+    - What art styles are currently popular?
+    - I'm interested in the top selling art genres.
+    - Which types of artwork are most sought after?
+    - What are the most popular artistic genres?
+    - Show me the trending art categories.
+    - Can you list the top selling artistic genres?
+    - Top selling?
+    - most selling?
+
+- intent: working_hours
+  examples: |
+   - Working hours?
+   - Working hrs?
+    - What are your working hours?
+    - When are you open?
+    - What are the office hours?
+    - Can you tell me when you're available?
+    - What times are you operational?
+    - When can I reach you?
+    - What time does your support team work?
+    - What are your business hours?
+    - Could you provide your working schedule?
+    - When is the customer service available?
+    - Tell me about your opening times.
+    - What hours are you accessible?
+    - When can I expect assistance?
+    - Are you available on weekends?
+    - What are your operating hours on weekdays?
+
+- intent: offers
+  examples: |
+   - Any offers?
+   - Offers?
+    - Are there any ongoing offers?
+    - Can you tell me about the current discounts?
+    - Do you have any promotions running right now?
+    - Are there any deals available?
+    - What special offers do you have?
+    - Can I get a discount on my purchase?
+    - Are there any coupons I can use?
+    - Do you offer any incentives for new customers?
+    - What are the latest offers?
+    - Are there any limited-time promotions?
+    - Can you tell me about your sale events?
+    - Do you have any buy-one-get-one (BOGO) offers?
+    - Can I avail of any discounts with a loyalty program?
+    - Are there any special offers for holidays?
+    - Can I get a discount code for my next purchase?
+
+- intent: supporting_transactions
+  examples: |
+    - transaction available?
+    - payment?
+    - Can I make a payment through the chatbot?
+    - How can I complete a transaction?
+    - Is it possible to buy artwork directly from the chatbot?
+    - I want to make a purchase. Can you assist me?
+    - How do I proceed with payment?
+    - Can I pay for my order using a credit card?
+    - What payment methods are supported?
+    - Can I use PayPal to make a payment?
+    - I need help with completing my purchase.
+    - Are transactions secure on this platform?
+    - How can I confirm my order?
+    - Can I check the status of my payment?
+    - What should I do if I encounter an issue during checkout?
+    - Can I cancel my order after making a payment?
+    - Do you provide refunds for canceled transactions?
+    - I'm having trouble completing my transaction. Can you help?
+    - How long does it take for a payment to process?
+
+- intent: order_id
+  examples: |
+    - My order ID is 123456.
+    - Can you help me with my order ID 789012?
+    - I need assistance with order number 345678.
+    - The order ID for my purchase is 901234.
+    - I forgot my order ID, but it's for the item I purchased yesterday.
+    - Is it possible to track my order with ID 567890?
+    - Could you please provide details for order number 432109?
+    - Where can I find my order ID on the confirmation email?
+    - I'm trying to check the status of order ID 876543.
+    - I need to return an item, but I lost the order ID.
+    - Can you resend the order confirmation with ID 210987?
+    - My order ID is not recognized on the website.
+    - I'm having trouble completing the payment for order number 654321.
+    - I received an email notification about my order ID 543210.
+    - How long does it take to process orders with ID 109876?
+    - I want to cancel my order, and the ID is 987654.
+- intent: track_order
+  examples: |
+    - track order
+    - How can I track my order?
+    - Can you help me track my recent purchase?
+    - I need to check the status of my order.
+    - Where is my package?
+    - What's the current status of my order?
+    - Could you provide an update on my shipment?
+    - I want to know when my order will arrive.
+    - Has my order been shipped yet?
+    - Can you track my order with the order ID ABC123?
+    - My order hasn't arrived yet. Can you check its status?
+    - I'm looking for information on my recent purchase.
+    - What's the expected delivery date for my order?
+    - How do I track my package?
+    - Please provide details on my order shipment.
+    - I'm trying to locate my package. Can you assist?
+
+- intent: search_artwork
+  examples: |
+   - [Michelangelo]( Artist).
+    - Show me artwork by [Vincent van Gogh](Artist).
+    - Find paintings by [Leonardo da Vinci](Artist).
+    - Search for artwork from the [impressionist](Genre) genre.
+    - Can you show me sculptures by [Michelangelo](Artist)?
+    - I'm looking for abstract artwork.
+    - Show me artwork featuring [flowers](Theme).
+    - Find landscape paintings.
+    - Can you recommend artwork by [Pablo Picasso](Artist)?
+    - Search for paintings with [bright colors](Description).
+    - I want to see artwork from the [Renaissance](Era) era.
+    - Show me artwork with [animals](Theme).
+    - Find artwork in [oil medium](Medium).
+    - I'm interested in artwork with [water](Theme) themes.
+    - Can you show me artwork by [Claude Monet](Artist)?
+    - Search for artwork from the [Baroque](Style) style.
+
+- intent: view_artist_profiles
+  examples: |
+   - artist profile
+   - artist
+    - Show me artist profiles
+    - I want to see artists' profiles
+    - Can I view artist bios?
+    - Show me information about artists
+    - I'm interested in learning about the artists
+    - Artists' profiles please
+    - Can you display artist details?
+    - Show me the list of artists
+    - View artists' backgrounds
+    - I want to know more about the artists
+    - Display artist profiles
+    - Show me the artists' biographies
+    - How can I see information about the artists?
+    - View bios of artists
+    - I'm curious about the artists
+    - Artists' profiles information
+
+- intent: view_artwork_categories
+  examples: |
+    - artwork category
+    - Show me the artwork categories.
+    - What are the available artwork categories?
+    - I want to explore artwork categories.
+    - Can you display the artwork categories?
+    - Show artwork categories.
+    - What kinds of artwork categories do you have?
+    - List artwork categories.
+    - Display artwork categories.
+    - View categories for artwork.
+    - Show me different categories of artwork.
+    - What are the types of artwork categories?
+    - I'm interested in viewing artwork categories.
+    - What are the available categories for artwork?
+    - List the artwork categories available.
+    - I'd like to explore the artwork categories.
+
+- intent: purchase_artwork
+  examples: |
+   - purchase 
+   - purchase artwork
+    - How can I buy this painting?
+    - I want to purchase this artwork.
+    - Can you help me place an order for this piece?
+    - How do I proceed with buying this artwork?
+    - What are the steps to purchase this painting?
+    - I'm interested in buying this artwork. What's next?
+    - I'd like to make a purchase. What do I need to do?
+    - Please guide me through the purchasing process for this piece.
+    - How can I complete the purchase of this artwork?
+    - I'm ready to buy. What's the next step?
+    - Can I place an order for this painting?
+    - What's the process for purchasing this artwork?
+    - I'm looking to buy this piece. What should I do?
+    - What are my options for buying this painting?
+    - Do you offer online purchasing for this artwork?
+
+- intent: contest_information
+  examples: |
+   - Contests
+   - Competitions
+    - upcoming contests
+    - upcoming competitions
+    - Can you provide information about upcoming contests?
+    - I'm interested in participating in a contest. What details do you have?
+    - Are there any art contests happening soon?
+    - Could you tell me about the current contest?
+    - I want to know about art competitions. Can you help?
+    - Where can I find details about the latest contest?
+    - Do you have any information about art contests?
+    - Can you give me details about the ongoing art competition?
+    - I'm looking for opportunities to showcase my artwork. Any contests coming up?
+    - Could you provide details about the contest schedule?
+    - What are the requirements for participating in the art contest?
+    - Is there a registration deadline for the upcoming contest?
+    - How can I submit my entry for the art competition?
+    - What are the prizes for the contest winners?
+    - Can you recommend any art contests suitable for beginners?
+
+- intent: contact_information
+  examples: |
+    - How can I contact you?
+    - What is your contact information?
+    - Can you provide me with your phone number?
+    - I need to get in touch with your support team.
+    - How do I reach your customer service?
+    - What are your contact details?
+    - I want to speak to someone from your team.
+    - Do you have an email address I can use?
+    - How can I reach out to you for assistance?
+    - Please provide your contact information.
+    - Where can I find your contact details?
+    - I need to contact you urgently.
+    - What is your helpline number?
+    - Can you share your office address?
+    - How do I get in contact with your sales department?
+    - Contact number?
+
+- intent: faqs
+  examples: |
+    - What are your shipping options?
+    - How can I track my order?
+    - Do you offer international shipping?
+    - What is your return policy?
+    - How do I contact customer support?
+    - Are your products handmade?
+    - What payment methods do you accept?
+    - Can I cancel my order?
+    - Are there any discounts available?
+    - How do I reset my password?
+    - Do you have a physical store location?
+    - Are your products eco-friendly?
+    - What is your refund policy?
+    - Can I change the delivery address after placing an order?
+    - Are your products customizable?
+
+- intent: recommendations
+  examples: |
+    - any recommendations
+    - recommendations
+    - Can you recommend some abstract paintings?
+    - I'm looking for recommendations on landscape artworks.
+    - Show me some popular artists in the impressionism genre.
+    - Any recommendations for contemporary sculptures?
+    - Can you suggest some minimalist artwork?
+    - What are your top recommendations for portrait paintings?
+    - I need recommendations for modern art pieces.
+    - Show me some trending art collections.
+    - Any recommendations for art inspired by nature?
+    - Can you suggest some artwork suitable for a living room?
+    - I'm interested in recommendations for art gifts.
+    - Show me some recommended artworks under $500.
+    - Can you recommend artwork for a corporate office setting?
+    - I'm looking for recommendations on art for a bedroom.
+    - Any recommendations for art pieces with vibrant colors?
+
+- intent: feedback_suggestions
+  examples: |
+    - I really loved the painting, but I think the colors could be more vibrant.
+    - The artwork quality was excellent, but I suggest providing more variety in the collection.
+    - The shipping was fast, but the packaging could have been more secure to prevent damage.
+    - I found the artwork description to be inaccurate. It didn't match the actual piece.
+    - The prices are reasonable, but offering discounts for loyal customers would be great.
+    - I appreciate the range of art styles available, but it would be helpful to have clearer categories.
+    - The website interface is user-friendly, but adding a search feature would enhance the browsing experience.
+    - The customer service was responsive, but having a live chat option would be convenient.
+    - I enjoyed browsing through the artworks, but it would be nice to see more emerging artists featured.
+    - The checkout process was smooth, but providing more payment options would be beneficial.
+    - The artworks arrived in good condition, but including care instructions would be helpful.
+    - The website navigation could be improved for easier access to different collections.
+    - I had difficulty finding specific artworks. Adding filters for size and price range would be useful.
+    - I love the concept of the art contests, but extending the submission deadline would allow more participation.
+    - The packaging was eco-friendly, but reducing plastic use further would align with sustainability goals.
+
+- intent: artwork_availability
+  examples: |
+    - Is the painting "Sunset by the Beach" available?
+    - Can I purchase the artwork "Starry Night"?
+    - Do you have "The Persistence of Memory" by Salvador Dali in stock?
+    - Is the sculpture "The Thinker" available for purchase?
+    - Can you check if "Girl with a Pearl Earring" is currently in stock?
+    - I'm interested in buying "The Scream" by Edvard Munch. Is it available?
+    - Are there any prints of "Water Lilies" by Claude Monet available?
+    - Can you tell me if "The Last Supper" by Leonardo da Vinci is available?
+    - I'd like to know if "The Birth of Venus" by Sandro Botticelli is available.
+    - Do you have any information on the availability of "The Starry Night"?
+    - Could you please check if "Guernica" by Pablo Picasso is available for purchase?
+    - Is "Mona Lisa" by Leonardo da Vinci currently in stock?
+    - Can you confirm the availability of "The Kiss" by Gustav Klimt?
+    - Is "The Great Wave off Kanagawa" by Hokusai available?
+    - Do you have "The Night Watch" by Rembrandt available for sale?
+
+- intent: order_status
+  examples: |
+    - status
+    - order status
+    - Can you please check the status of my artwork order?
+    - I'd like to know the current status of my order for the painting.
+    - What's the status of my artwork delivery?
+    - Could you provide an update on my order for the artwork?
+    - I'm curious about the status of my order. Can you help?
+    - Has my artwork been shipped? I want to check the status.
+    - Where is my artwork order currently? Can you check?
+    - I haven't received any updates on my order status. Can you provide one?
+    - Can you track my order for the artwork and let me know the status?
+    - It's been a while since I placed my order. Any updates on the status?
+    - How far along is my artwork order? Can you check the status?
+    - Can you tell me if my artwork has been dispatched yet?
+    - I'm eager to know the status of my order. Could you please check?
+    - Is there any way to track my order status for the artwork?
+    - What's the current status of my artwork order? Please provide an update.
+
+- intent: payment_assistance
+  examples: |
+    - help with payment 
+    -  Assistance for payment
+    - I need help with payment options for purchasing artwork.
+    - Can you assist me with payment plans for buying artwork?
+    - How can I get assistance with making a payment for an artwork?
+    - I'm having trouble processing my payment for the artwork. Can you help?
+    - What are the available payment methods for purchasing artwork?
+    - Could you provide guidance on financing options for buying artwork?
+    - I'm interested in a piece of artwork but need assistance with payment arrangements.
+    - Can you help me understand the payment process for buying artwork?
+    - I'm not sure how to proceed with payment for the artwork. Can you provide assistance?
+    - Are there any discounts or promotions available for artwork purchases?
+    - I have questions about installment plans for purchasing artwork. Can you provide information?
+    - Can you guide me through the checkout process for buying artwork?
+    - I'd like to explore payment assistance options for purchasing artwork.
+    - How can I apply for financing for buying artwork?
+    - Do you offer any support with payment issues for artwork purchases?
+
+- intent: shipping_information
+  examples: |
+    - shipping info
+    - shipping information
+    - Can you provide information about shipping my artwork?
+    - How long does it take for artwork to be shipped?
+    - What are the shipping options for my order?
+    - Can you tell me about the shipping process for artworks?
+    - I'd like to know when my artwork will be delivered.
+    - Do you offer international shipping for artwork?
+    - Can I track my artwork shipment?
+    - What courier service do you use for shipping artworks?
+    - Is there a shipping fee for artwork orders?
+    - Can I change the shipping address for my artwork order?
+    - How can I expedite the shipping of my artwork?
+    - Are there any shipping restrictions for certain artworks?
+    - Can I schedule a specific delivery date for my artwork?
+    - What packaging materials are used for shipping artworks?
+    - Do you provide insurance for artwork shipments?
+
+- intent: artwork_customization
+  examples: |
+    - Can I request custom framing for this painting?
+    - I'd like to personalize the frame for my artwork.
+    - Is it possible to add a mat border to this artwork?
+    - Can I customize the size of the frame for this piece?
+    - I'm interested in adding a gold leaf finish to the frame.
+    - Can you engrave a message on the frame?
+    - Is it possible to change the color of the frame to black?
+    - Can I request a floating frame for this canvas?
+    - I'd like to customize the frame width for this painting.
+    - Can you provide options for acrylic mounting for this artwork?
+    - I'm looking to add UV protection to the frame.
+    - Can I request a shadow box frame for this 3D artwork?
+    - Is it possible to add a museum-quality glass to the frame?
+    - I'd like to explore options for gallery wrapping for this canvas.
+    - Can I customize the frame style to match my home decor?
+
+- intent: artwork_reviews
+  examples: |
+    - I absolutely love the painting! The colors are so vibrant and it looks even better in person.
+    - This artwork exceeded my expectations. It's even more stunning in real life!
+    - The attention to detail in this sculpture is remarkable. Truly a masterpiece.
+    - I'm not quite satisfied with the quality of the print. It looked better online.
+    - The painting arrived damaged, which was disappointing. The seller should improve their packaging.
+    - I'm very impressed with the artist's skill and creativity. This piece speaks to me on a deep level.
+    - The customer service was excellent! The staff helped me find the perfect artwork for my home.
+    - The shipping was fast and efficient. I received my order within a few days.
+    - I'm a repeat customer and I've never been disappointed with the quality of the artworks I've purchased.
+    - The description of the artwork was accurate, and it arrived exactly as described.
+    - The price seemed a bit high for the size of the artwork, but the quality justified it.
+    - I appreciate the variety of styles available on this platform. There's something for every taste.
+    - The artist's portfolio is impressive. I've added several pieces to my wishlist already.
+    - The artwork arrived well-packaged and in perfect condition. Kudos to the seller for taking care in shipping.
+    - I had some questions about the artwork, and the artist was very responsive and helpful.
+
+- intent: artwork_authentication
+  examples: |
+    - How can I verify the authenticity of this artwork?
+    - Can you provide information on how to authenticate a painting?
+    - What steps should I take to ensure this artwork is authentic?
+    - I'm interested in buying a painting, but I want to make sure it's authentic first.
+    - How do I know if the artwork I'm considering is genuine?
+    - What are the methods used to authenticate artworks?
+    - Is there a way to verify the legitimacy of a sculpture?
+    - I heard about art forgeries. How can I protect myself from buying one?
+    - Can you recommend reputable authentication services for artworks?
+    - What are the signs of a fake artwork?
+    - Are there any specific documents I should look for to authenticate a piece?
+    - How do experts determine the authenticity of an artwork?
+    - I'm concerned about buying counterfeit art. What should I do?
+    - Do you have any advice on verifying the provenance of a painting?
+    - What are the common methods used by art authenticators?
+
+- intent: artwork_preservation
+  examples: |
+    - How can I preserve my oil paintings to prevent them from yellowing over time?
+    - What are the best practices for preserving watercolor artworks?
+    - I'm concerned about preserving my acrylic paintings. Any tips?
+    - Can you recommend techniques for preserving charcoal drawings?
+    - How should I store my pastel artworks to prevent smudging?
+    - What precautions should I take to preserve my mixed media artworks?
+    - Are there any specific conditions I should maintain to preserve my canvas prints?
+    - I want to ensure the long-term preservation of my ink sketches. Any advice?
+    - What steps should I take to preserve my digital artworks from degradation?
+    - Can you provide guidance on preserving my photographs to prevent fading?
+    - I'm worried about preserving my sculptures. Any recommendations?
+    - How do I protect my woodcut prints from moisture damage?
+    - What measures should I take to preserve my lithographs?
+    - Are there any products you recommend for preserving my art collection?
+    - Can you suggest resources for learning more about artwork preservation techniques?

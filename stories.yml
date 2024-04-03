@@ -1,0 +1,1652 @@
+version: "3.1"
+
+stories:
+  - story: User greets with "Hello"
+    steps:
+      - intent: greet    
+  - action: action_greet
+
+  - story: User greets with "Hi there!"
+    steps:
+      - intent: greet
+      - action: action_greet
+
+  - story: User greets with "Good morning"
+    steps:
+      - intent: greet
+      - action: action_greet
+
+  - story: User greets with "Good evening"
+    steps:
+      - intent: greet
+      - action: action_greet
+
+  - story: User greets with "Good afternoon"
+    steps:
+      - intent: greet
+      - action: action_greet
+
+  - story: User greets with "Hey"
+    steps:
+      - intent: greet
+      - action: action_greet
+
+  - story: User greets with "Hi, how are you?"
+    steps:
+      - intent: greet
+      - action: action_greet
+
+  - story: User greets with "Hi, what's up?"
+    steps:
+      - intent: greet
+      - action: action_greet
+
+  - story: User greets with "Greetings"
+    steps:
+      - intent: greet
+      - action: action_greet
+
+  - story: User greets with "Hiya"
+    steps:
+      - intent: greet
+      - action: action_greet
+
+  - story: User greets with "Heyya"
+    steps:
+      - intent: greet
+      - action: action_greet
+
+  - story: User greets with "Hi"
+    steps:
+      - intent: greet
+      - action: action_greet
+
+  - story: User greets with "Let’s go"
+    steps:
+      - intent: greet
+      - action: action_greet
+
+  - story: User greets with "heyy"
+    steps:
+      - intent: greet
+      - action: action_greet
+
+  - story: User greets with "Hii"
+    steps:
+      - intent: greet
+      - action: action_greet
+  - story: User greets with "Hello there!"
+    steps:
+      - intent: greet
+      - action: action_greet
+
+stories2:
+  - story: User inquires about available artwork sizes
+    steps:
+      - intent: sizes
+      - action: action_provide_artwork_sizes
+
+  - story: User asks for dimensions of paintings
+    steps:
+      - intent: size
+      - action: action_provide_artwork_sizes
+
+  - story: User asks about standard sizes for artwork
+    steps:
+      - intent: sizes
+      - action: action_provide_artwork_sizes
+
+  - story: User expresses interest in larger sizes of paintings
+    steps:
+      - intent: sizes
+      - action: action_provide_artwork_sizes
+
+  - story: User inquires about custom sizes for artwork
+    steps:
+      - intent: sizes
+      - action: action_provide_artwork_sizes
+
+  - story: User asks for dimensions of specific artwork
+    steps:
+      - intent: sizes
+      - action: action_provide_artwork_sizes
+
+  - story: User asks about size options available
+    steps:
+      - intent: sizes
+      - action: action_provide_artwork_sizes
+
+  - story: User inquires about availability of paintings in various sizes
+    steps:
+      - intent: sizes
+      - action: action_provide_artwork_sizes
+
+  - story: User asks about typical sizes of artworks
+    steps:
+      - intent: size
+      - action: action_provide_artwork_sizes
+
+  - story: User asks for small-sized paintings
+    steps:
+      - intent: sizes    
+  - action: action_provide_artwork_sizes
+
+  - story: User requests details about sizes of artworks
+    steps:
+      - intent: sizes
+      - action: action_provide_artwork_sizes
+
+  - story: User asks about the largest size offered
+    steps:
+      - intent: sizes
+      - action: action_provide_artwork_sizes
+
+  - story: User asks about availability of paintings in different dimensions
+    steps:
+      - intent: sizes
+      - action: action_provide_artwork_sizes
+
+  - story: User seeks recommendation for a painting size for their wall
+    steps:
+      - intent: sizes
+      - action: action_provide_artwork_sizes
+
+  - story: User needs a painting that fits a specific space and asks for size recommendation
+    steps:
+      - intent: sizes
+      - action: action_provide_artwork_sizes
+
+  - story: User inquires about available sizes
+    steps:
+      - intent: sizes
+      - action: action_provide_artwork_sizes
+
+  - story: User asks for sizes of paintings
+    steps:
+      - intent: sizes
+      - action: action_provide_artwork_sizes
+
+
+stories1:
+  - story: User asks about different types of art
+    steps:
+      - intent: types_of_art     
+      - action: action_provide_art_types_info
+
+  - story: User seeks information about various art forms
+    steps:
+      - intent: types_of_art
+      - action: action_provide_art_types_info
+
+  - story: User expresses interest in learning about different types of art
+    steps:
+      - intent: types_of_art
+      - action: action_provide_art_types_info
+
+  - story: User asks about popular forms of art
+    steps:
+      - intent: types_of_art     
+      - action: action_provide_art_types_info
+      - story: User requests explanation of different categories of art
+        steps:
+      - intent: types_of_art     
+      - action: action_provide_art_types_info
+
+  - story: User wants to know about art styles
+    steps:
+      - intent: types_of_art
+      - action: action_provide_art_types_info
+
+  - story: User asks about kinds of art they can explore
+    steps:
+      - intent: types_of_art
+      - action: action_provide_art_types_info
+
+  - story: User asks for a list of art genres
+    steps:
+      - intent: types_of_art
+      - action: action_provide_art_types_info
+
+  - story: User inquires about various art movements
+    steps:
+      - intent: types_of_art
+      - action: action_provide_art_types_info
+
+  - story: User expresses curiosity about diversity in art
+    steps:
+      - intent: types_of_art     
+      - action: action_provide_art_types_info
+
+  - story: User asks about specific types of art they should be aware of
+    steps:
+      - intent: types_of_art     
+  - action: action_provide_art_types_info
+
+  - story: User asks for elaboration on classifications of art
+    steps:
+      - intent: types_of_art
+      - action: action_provide_art_types_info
+
+  - story: User seeks information about main branches of art
+    steps:
+      - intent: types_of_art
+      - action: action_provide_art_types_info
+
+  - story: User expresses desire to explore different artistic expressions
+    steps:
+      - intent: types_of_art    
+  - action: action_provide_art_types_info
+
+  - story: User asks for an overview of art types
+    steps:
+      - intent: types_of_art
+      - action: action_provide_art_types_info
+
+  - story: User asks about types of art
+    steps:
+      - intent: types_of_art
+      - action: action_provide_art_types_info
+
+  - story: User asks about types
+    steps:
+    - intent: types_of_art      
+- action: action_provide_art_types_info
+
+stories:
+  - story: User asks about the price range for artwork
+    steps:
+      - intent: price_range      
+- action: action_provide_price_range_info
+
+  - story: User requests the price range
+    steps:
+      - intent: price_range      
+- action: action_provide_price_range_info
+
+   - story: User inquires about typical pricing for artworks
+    steps:
+      - intent: price_range
+      - action: action_provide_price_range_info
+
+  - story: User asks about price ranges for different types of artwork
+    steps:
+      - intent: price_range      
+- action: action_provide_price_range_info
+
+  - story: User is looking for artwork in a specific price range
+    steps:
+      - intent: price_range
+      - action: action_provide_price_range_info
+
+  - story: User asks for the price range for paintings in the collection
+    steps:
+      - intent: price_range
+      - action: action_provide_price_range_info
+
+  - story: User inquires about the price range for sculptures
+    steps:
+      - intent: price_range     
+ - action: action_provide_price_range_info
+
+  - story: User asks about the highest price range for artwork
+    steps:
+      - intent: price_range      
+- action: action_provide_price_range_info
+
+  - story: User asks if there are artwork available in the lower price range
+    steps:
+      - intent: price_range
+      - action: action_provide_price_range_info
+
+  - story: User asks for an idea of the price range for pieces
+    steps:
+      - intent: price_range
+      - action: action_provide_price_range_info
+
+  - story: User asks about the average price range for artwork
+    steps:
+      - intent: price_range
+      - action: action_provide_price_range_info
+
+  - story: User asks if there are any discounts available within the price range
+    steps:
+      - intent: price_range
+      - action: action_provide_price_range_info
+
+  - story: User asks if they can find artwork within a budget-friendly price range
+    steps:
+      - intent: price_range
+      - action: action_provide_price_range_info
+
+  - story: User asks for the starting price range for artwork
+    steps:
+      - intent: price_range      
+- action: action_provide_price_range_info
+
+  - story: User asks if there is a wide price range for the collection
+    steps:
+      - intent: price_range     
+ - action: action_provide_price_range_info
+
+  - story: User asks to specify the price range for limited edition pieces
+    steps:
+      - intent: price_range
+      - action: action_provide_price_range_info
+
+  - story: User asks about the price
+    steps:
+      - intent: price_range     
+ - action: action_provide_price_range_info
+
+  - story: User asks about the price range
+    steps:
+      - intent: price_range     
+ - action: action_provide_price_range_info
+
+  - story: User asks about the range
+    steps:
+      - intent: price_range
+      - action: action_provide_price_range_info
+
+stories:
+  - story: User asks about the top selling genres
+    steps:
+      - intent: top_selling_genre
+      - action: action_provide_top_selling_genres_info
+
+  - story: User inquires about the most popular genres
+    steps:
+      - intent: top_selling_genre
+      - action: action_provide_top_selling_genres_info
+
+  - story: User asks which genres sell the most
+    steps:
+      - intent: top_selling_genre     
+ - action: action_provide_top_selling_genres_info
+
+  - story: User wants to know what types of art are currently trending
+    steps:
+      - intent: top_selling_genre
+      - action: action_provide_top_selling_genres_info
+
+  - story: User expresses curiosity about the top selling genres
+    steps:
+      - intent: top_selling_genre
+      - action: action_provide_top_selling_genres_info
+
+  - story: User asks to see the most popular art genres
+    steps:
+      - intent: top_selling_genre
+      - action: action_provide_top_selling_genres_info
+
+  - story: User wants to know about the best-selling art styles
+    steps:
+      - intent: top_selling_genre      
+- action: action_provide_top_selling_genres_info
+
+  - story: User asks which genres are in high demand
+    steps:
+      - intent: top_selling_genre
+      - action: action_provide_top_selling_genres_info
+
+  - story: User seeks recommendations for the hottest art genres
+    steps:
+      - intent: top_selling_genre     
+ - action: action_provide_top_selling_genres_info
+
+  - story: User wants to know what art styles are currently popular
+    steps:
+      - intent: top_selling_genre
+      - action: action_provide_top_selling_genres_info
+
+  - story: User expresses interest in the top selling art genres
+    steps:
+      - intent: top_selling_genre      
+- action: action_provide_top_selling_genres_info
+
+  - story: User asks which types of artwork are most sought after
+    steps:
+      - intent: top_selling_genre     
+ - action: action_provide_top_selling_genres_info
+
+  - story: User asks what the most popular artistic genres are
+    steps:
+      - intent: top_selling_genre      
+- action: action_provide_top_selling_genres_info
+
+  - story: User requests to see the trending art categories
+    steps:
+      - intent: top_selling_genre     
+ - action: action_provide_top_selling_genres_info
+
+  - story: User asks for a list of the top selling artistic genres
+    steps:
+      - intent: top_selling_genre     
+ - action: action_provide_top_selling_genres_info
+
+  - story: User asks about top selling genres
+    steps:
+      - intent: top_selling_genre
+      - action: action_provide_top_selling_genres_info
+
+  - story: User asks about most selling genres
+    steps:
+      - intent: top_selling_genre
+      - action: action_provide_top_selling_genres_info
+
+stories:
+  - story: User asks about working hours
+    steps:
+      - intent: working_hours     
+ - action: action_provide_working_hours_info
+
+  - story: User asks about working hours
+    steps:
+      - intent: working_hours    
+  - action: action_provide_working_hours_info
+
+  - story: User inquires about working hours
+    steps:
+      - intent: working_hours     
+ - action: action_provide_working_hours_info
+
+  - story: User wants to know when you're open
+    steps:
+      - intent: working_hours
+      - action: action_provide_working_hours_info
+
+  - story: User asks about office hours
+    steps:
+      - intent: working_hours     
+ - action: action_provide_working_hours_info
+
+  - story: User asks when you're available
+    steps:
+      - intent: working_hours     
+ - action: action_provide_working_hours_info
+
+  - story: User asks about operational times
+    steps:
+      - intent: working_hours     
+ - action: action_provide_working_hours_info
+
+  - story: User asks when they can reach you
+    steps:
+      - intent: working_hours
+      - action: action_provide_working_hours_info
+
+  - story: User asks about support team's working hours
+    steps:
+      - intent: working_hours
+      - action: action_provide_working_hours_info
+
+  - story: User asks about business hours
+    steps:
+      - intent: working_hours     
+ - action: action_provide_working_hours_info
+
+  - story: User requests working schedule
+    steps:
+      - intent: working_hours     
+ - action: action_provide_working_hours_info
+
+  - story: User asks when customer service is available
+    steps:
+      - intent: working_hours      
+- action: action_provide_working_hours_info
+
+  - story: User inquires about opening times
+    steps:
+      - intent: working_hours      
+- action: action_provide_working_hours_info
+
+  - story: User asks when you're accessible
+    steps:
+      - intent: working_hours     
+ - action: action_provide_working_hours_info
+
+  - story: User asks when they can expect assistance
+    steps:
+      - intent: working_hours      
+- action: action_provide_working_hours_info
+
+  - story: User asks if you're available on weekends
+    steps:
+      - intent: working_hours      
+- action: action_provide_working_hours_info
+
+  - story: User asks about operating hours on weekdays
+    steps:
+      - intent: working_hours
+      - action: action_provide_working_hours_info
+
+stories:
+  - story: User asks about any offers
+    steps:
+      - intent: offers
+      - action: action_provide_offers_info
+
+  - story: User asks about offers
+    steps:
+      - intent: offers
+      - action: action_provide_offers_info
+
+  - story: User inquires about ongoing offers
+    steps:
+      - intent: offers      
+- action: action_provide_offers_info
+
+  - story: User asks about current discounts
+    steps:
+      - intent: offers      
+- action: action_provide_offers_info
+
+  - story: User asks if there are any promotions running
+    steps:
+      - intent: offers
+      - action: action_provide_offers_info
+
+  - story: User asks about available deals
+    steps:
+      - intent: offers
+      - action: action_provide_offers_info
+
+  - story: User asks about special offers
+    steps:
+      - intent: offers
+      - action: action_provide_offers_info
+
+  - story: User wants to know if they can get a discount
+    steps:
+      - intent: offers
+      - action: action_provide_offers_info
+
+  - story: User asks about available coupons
+    steps:
+      - intent: offers
+      - action: action_provide_offers_info
+
+  - story: User asks if there are any incentives for new customers
+    steps:
+      - intent: offers      
+- action: action_provide_offers_info
+
+  - story: User asks about the latest offers
+    steps:
+      - intent: offers
+      - action: action_provide_offers_info
+
+  - story: User asks if there are any limited-time promotions
+    steps:
+      - intent: offers
+      - action: action_provide_offers_info
+
+  - story: User asks about sale events
+    steps:
+      - intent: offers      
+- action: action_provide_offers_info
+
+  - story: User asks if there are any buy-one-get-one (BOGO) offers
+    steps:
+      - intent: offers
+      - action: action_provide_offers_info
+
+  - story: User asks if they can avail of discounts with a loyalty program
+    steps:
+      - intent: offers     
+ - action: action_provide_offers_info
+
+  - story: User asks if there are any special offers for holidays
+    steps:
+      - intent: offers      
+- action: action_provide_offers_info
+
+  - story: User asks if they can get a discount code for their next purchase
+    steps:
+      - intent: offers
+      - action: action_provide_offers_info
+
+stories:
+  - story: User asks about transaction availability
+    steps:
+      - intent: supporting_transactions      
+- action: action_provide_transaction_info
+
+  - story: User asks about payment
+    steps:
+      - intent: supporting_transactions
+      - action: action_provide_transaction_info
+
+  - story: User asks if they can make a payment through the chatbot
+    steps:
+      - intent: supporting_transactions
+      - action: action_provide_transaction_info
+
+  - story: User asks how to complete a transaction
+    steps:
+      - intent: supporting_transactions    
+  - action: action_provide_transaction_info
+
+  - story: User asks if it's possible to buy artwork directly from the chatbot
+    steps:
+      - intent: supporting_transactions
+      - action: action_provide_transaction_info
+
+  - story: User wants assistance with making a purchase
+    steps:
+      - intent: supporting_transactions    
+  - action: action_provide_transaction_info
+
+  - story: User asks how to proceed with payment
+    steps:
+      - intent: supporting_transactions
+      - action: action_provide_transaction_info
+
+  - story: User asks if they can pay for their order using a credit card
+    steps:
+      - intent: supporting_transactions     
+ - action: action_provide_transaction_info
+
+  - story: User asks what payment methods are supported
+    steps:
+      - intent: supporting_transactions     
+ - action: action_provide_transaction_info
+
+  - story: User asks if they can use PayPal to make a payment
+    steps:
+      - intent: supporting_transactions     
+ - action: action_provide_transaction_info
+
+  - story: User needs help completing their purchase
+    steps:
+      - intent: supporting_transactions      
+- action: action_provide_transaction_info
+
+  - story: User asks if transactions are secure on this platform
+    steps:
+      - intent: supporting_transactions
+      - action: action_provide_transaction_info
+
+  - story: User asks how to confirm their order
+    steps:
+      - intent: supporting_transactions
+      - action: action_provide_transaction_info
+
+  - story: User asks if they can check the status of their payment
+    steps:
+      - intent: supporting_transactions     
+ - action: action_provide_transaction_info
+
+  - story: User asks what to do if they encounter an issue during checkout
+    steps:
+      - intent: supporting_transactions
+      - action: action_provide_transaction_info
+
+  - story: User asks if they can cancel their order after making a payment
+    steps:
+      - intent: supporting_transactions     
+ - action: action_provide_transaction_info
+
+  - story: User asks if refunds are provided for canceled transactions
+    steps:
+      - intent: supporting_transactions
+      - action: action_provide_transaction_info
+
+  - story: User needs help completing their transaction
+    steps:
+      - intent: supporting_transactions
+      - action: action_provide_transaction_info
+
+  - story: User asks how long it takes for a payment to process
+    steps:
+      - intent: supporting_transactions     
+ - action: action_provide_transaction_info
+
+stories:
+  - story: User provides their order ID
+    steps:
+      - intent: order_id
+        entities:
+          - order_id: "123456"
+      - action: action_process_order_id
+
+  - story: User asks for assistance with their order ID
+    steps:
+      - intent: order_id
+        entities:
+          - order_id: "789012"
+      - action: action_process_order_id
+
+  - story: User needs assistance with order number
+    steps:
+      - intent: order_id
+        entities:
+          - order_id: "345678"
+      - action: action_process_order_id
+
+  - story: User provides their order ID
+    steps:
+      - intent: order_id
+        entities:
+          - order_id: "901234"
+      - action: action_process_order_id
+
+  - story: User forgot their order ID but mentions the purchase date
+    steps:
+      - intent: order_id
+        entities:
+          - purchase_date: "yesterday"
+      - action: action_process_order_id
+
+  - story: User asks if it's possible to track their order with a specific ID
+    steps:
+      - intent: order_id
+        entities:
+          - order_id: "567890"
+      - action: action_process_order_id
+
+  - story: User asks for details about a specific order number
+    steps:
+      - intent: order_id
+        entities:
+          - order_id: "432109"
+      - action: action_process_order_id
+
+  - story: User asks where to find their order ID on the confirmation email
+    steps:
+      - intent: order_id
+        entities:
+          - confirmation_email: "email"
+      - action: action_process_order_id
+
+  - story: User tries to check the status of their order with a specific ID
+    steps:
+      - intent: order_id
+        entities:
+          - order_id: "876543"
+      - action: action_process_order_id
+
+  - story: User needs to return an item but lost the order ID
+    steps:
+      - intent: order_id
+        entities:
+          - return_item: true
+      - action: action_process_order_id
+
+  - story: User requests to resend the order confirmation with a specific ID
+    steps:
+      - intent: order_id
+        entities:
+          - order_id: "210987"
+      - action: action_process_order_id
+
+  - story: User mentions their order ID is not recognized on the website
+    steps:
+      - intent: order_id
+        entities:
+          - unrecognized_order_id: true
+      - action: action_process_order_id
+
+  - story: User is having trouble completing payment for a specific order
+    steps:
+      - intent: order_id
+        entities:
+          - order_id: "654321"
+      - action: action_process_order_id
+
+  - story: User received an email notification about their order ID
+    steps:
+      - intent: order_id
+        entities:
+          - order_id: "543210"
+      - action: action_process_order_id
+
+  - story: User asks how long it takes to process orders with a specific ID
+    steps:
+      - intent: order_id
+        entities:
+          - order_id: "109876"
+      - action: action_process_order_id
+
+  - story: User wants to cancel their order with a specific ID
+    steps:
+      - intent: order_id
+         entities:
+          - order_id: "987654"
+      - action: action_process_order_id
+
+stories:
+  - story: User asks to track their order
+    steps:
+      - intent: track_order     
+ - action: action_track_order
+
+  - story: User asks how to track their order
+    steps:
+      - intent: track_order     
+ - action: action_track_order
+
+  - story: User requests assistance in tracking their recent purchase
+    steps:
+      - intent: track_order     
+ - action: action_track_order
+
+  - story: User needs to check the status of their order
+    steps:
+      - intent: track_order      
+- action: action_track_order
+
+  - story: User asks where their package is
+    steps:
+      - intent: track_order      
+- action: action_track_order
+
+  - story: User asks for the current status of their order
+    steps:
+      - intent: track_order
+      - action: action_track_order
+
+  - story: User requests an update on their shipment
+    steps:
+      - intent: track_order      
+- action: action_track_order
+
+  - story: User wants to know when their order will arrive
+    steps:
+      - intent: track_order
+      - action: action_track_order
+
+  - story: User asks if their order has been shipped yet
+    steps:
+      - intent: track_order
+      - action: action_track_order
+
+  - story: User requests to track their order with a specific order ID
+    steps:
+      - intent: track_order
+        entities:
+          - order_id: "ABC123"
+      - action: action_track_order
+
+  - story: User's order hasn't arrived yet and asks to check its status
+    steps:
+      - intent: track_order
+      - action: action_track_order
+
+  - story: User is looking for information on their recent purchase
+    steps:
+      - intent: track_order     
+ - action: action_track_order
+
+  - story: User asks for the expected delivery date of their order
+    steps:
+      - intent: track_order
+      - action: action_track_order
+
+  - story: User asks how to track their package
+    steps:
+      - intent: track_order
+      - action: action_track_order
+
+  - story: User requests details on their order shipment
+    steps:
+      - intent: track_order
+      - action: action_track_order
+
+  - story: User is trying to locate their package and asks for assistance
+    steps:
+      - intent: track_order      
+- action: action_track_order
+
+stories:
+  - story: User searches for artwork by artist (Michelangelo)
+    steps:
+      - intent: search_artwork
+        entities:
+          - Artist: "Michelangelo"
+      - action: action_search_artwork
+
+  - story: User searches for artwork by artist (Vincent van Gogh)
+    steps:
+      - intent: search_artwork
+        entities:
+          - Artist: "Vincent van Gogh"
+      - action: action_search_artwork
+
+  - story: User searches for artwork by artist (Leonardo da Vinci)
+    steps:
+      - intent: search_artwork
+        entities:
+          - Artist: "Leonardo da Vinci"
+      - action: action_search_artwork
+
+  - story: User searches for artwork by genre (impressionist)
+    steps:
+      - intent: search_artwork
+        entities:
+          - Genre: "impressionist"
+      - action: action_search_artwork
+
+  - story: User searches for sculptures by artist (Michelangelo)
+    steps:
+      - intent: search_artwork
+        entities:
+          - Artist: "Michelangelo"
+          - Artwork_Type: "sculptures"
+      - action: action_search_artwork
+
+  - story: User searches for abstract artwork
+    steps:
+      - intent: search_artwork
+        entities:
+          - Description: "abstract"
+      - action: action_search_artwork
+
+  - story: User searches for artwork featuring flowers
+    steps:
+      - intent: search_artwork
+        entities:
+          - Theme: "flowers"
+      - action: action_search_artwork
+
+  - story: User searches for landscape paintings
+    steps:
+      - intent: search_artwork
+        entities:
+          - Theme: "landscape"
+          - Artwork_Type: "paintings"
+      - action: action_search_artwork
+
+  - story: User wants artwork recommendations by artist (Pablo Picasso)
+    steps:
+      - intent: search_artwork
+        entities:
+          - Artist: "Pablo Picasso"
+      - action: action_search_artwork
+
+  - story: User searches for paintings with bright colors
+    steps:
+      - intent: search_artwork
+        entities:
+          - Description: "bright colors"
+          - Artwork_Type: "paintings"
+      - action: action_search_artwork
+
+  - story: User searches for artwork from the Renaissance era
+    steps:
+      - intent: search_artwork
+        entities:
+          - Era: "Renaissance"
+      - action: action_search_artwork
+
+  - story: User searches for artwork featuring animals
+    steps:
+      - intent: search_artwork
+        entities:
+          - Theme: "animals"
+      - action: action_search_artwork
+
+  - story: User searches for artwork in oil medium
+    steps:
+      - intent: search_artwork
+        entities:
+          - Medium: "oil"
+      - action: action_search_artwork
+
+  - story: User searches for artwork with water themes
+    steps:
+      - intent: search_artwork
+        entities:
+          - Theme: "water"
+      - action: action_search_artwork
+
+  - story: User searches for artwork by artist (Claude Monet)
+    steps:
+      - intent: search_artwork
+        entities:
+          - Artist: "Claude Monet"
+      - action: action_search_artwork
+
+  - story: User searches for artwork from the Baroque style
+    steps:
+      - intent: search_artwork
+        entities:
+          - Style: "Baroque"
+      - action: action_search_artwork 
+
+stories:
+  - story: User requests to view artist profiles
+    steps:
+      - intent: view_artist_profiles
+      - action: action_view_artist_profiles
+
+  - story: User asks to see artists' profiles
+    steps:
+      - intent: view_artist_profiles     
+ - action: action_view_artist_profiles
+
+  - story: User asks if they can view artist bios
+    steps:
+      - intent: view_artist_profiles      
+- action: action_view_artist_profiles
+
+  - story: User requests information about artists
+    steps:
+      - intent: view_artist_profiles
+      - action: action_view_artist_profiles
+
+  - story: User expresses interest in learning about the artists
+    steps:
+      - intent: view_artist_profiles
+      - action: action_view_artist_profiles
+
+  - story: User asks for artists' profiles
+    steps:
+      - intent: view_artist_profiles     
+ - action: action_view_artist_profiles
+
+  - story: User asks to display artist details
+    steps:
+      - intent: view_artist_profiles
+      - action: action_view_artist_profiles
+
+  - story: User requests to see the list of artists
+    steps:
+      - intent: view_artist_profiles      
+- action: action_view_artist_profiles
+
+  - story: User wants to view artists' backgrounds
+    steps:
+      - intent: view_artist_profiles     
+ - action: action_view_artist_profiles
+
+  - story: User expresses curiosity about the artists
+    steps:
+      - intent: view_artist_profiles     
+ - action: action_view_artist_profiles
+
+
+stories:
+  - story: User requests to view artwork categories
+    steps:
+      - intent: view_artwork_categories
+      - action: action_view_artwork_categories
+
+  - story: User asks to show artwork categories
+    steps:
+      - intent: view_artwork_categories     
+ - action: action_view_artwork_categories
+
+  - story: User asks what the available artwork categories are
+    steps:
+      - intent: view_artwork_categories     
+ - action: action_view_artwork_categories
+
+  - story: User expresses interest in exploring artwork categories
+    steps:
+      - intent: view_artwork_categories
+      - action: action_view_artwork_categories
+
+  - story: User requests to display artwork categories
+    steps:
+      - intent: view_artwork_categories
+      - action: action_view_artwork_categories
+
+  - story: User asks to list artwork categories
+    steps:
+      - intent: view_artwork_categories
+      - action: action_view_artwork_categories
+
+  - story: User wants to view categories for artwork
+    steps:
+      - intent: view_artwork_categories      
+- action: action_view_artwork_categories
+
+  - story: User asks to show different categories of artwork
+    steps:
+      - intent: view_artwork_categories     
+ - action: action_view_artwork_categories
+
+  - story: User asks what types of artwork categories there are
+    steps:
+      - intent: view_artwork_categories     
+ - action: action_view_artwork_categories
+
+  - story: User expresses interest in viewing artwork categories
+    steps:
+      - intent: view_artwork_categories      
+- action: action_view_artwork_categories
+
+  - story: User asks what the available categories for artwork are
+    steps:
+      - intent: view_artwork_categories      
+- action: action_view_artwork_categories
+
+  - story: User asks to list the artwork categories available
+    steps:
+      - intent: view_artwork_categories      
+- action: action_view_artwork_categories
+
+  - story: User wants to explore the artwork categories
+    steps:
+      - intent: view_artwork_categories
+      - action: action_view_artwork_categories
+
+
+stories:
+  - story: User expresses intent to purchase artwork
+    steps:
+      - intent: purchase_artwork
+      - action: action_purchase_artwork
+
+  - story: User asks how to buy a painting
+    steps:
+      - intent: purchase_artwork     
+ - action: action_purchase_artwork
+
+  - story: User wants to purchase a specific artwork
+    steps:
+      - intent: purchase_artwork
+      - action: action_purchase_artwork
+
+  - story: User asks for assistance in placing an order
+    steps:
+      - intent: purchase_artwork      
+- action: action_purchase_artwork
+
+  - story: User asks about the steps to purchase artwork
+    steps:
+      - intent: purchase_artwork
+      - action: action_purchase_artwork
+
+  - story: User expresses readiness to buy artwork
+    steps:
+      - intent: purchase_artwork     
+ - action: action_purchase_artwork
+
+  - story: User wants guidance on the purchasing process for artwork
+    steps:
+      - intent: purchase_artwork     
+ - action: action_purchase_artwork
+
+  - story: User asks how to complete the purchase of artwork
+    steps:
+      - intent: purchase_artwork     
+ - action: action_purchase_artwork
+
+  - story: User asks if they can place an order for a specific painting
+    steps:
+      - intent: purchase_artwork     
+ - action: action_purchase_artwork
+
+  - story: User asks about the purchasing process for artwork
+    steps:
+      - intent: purchase_artwork
+      - action: action_purchase_artwork
+
+  - story: User asks about their options for buying a painting
+    steps:
+      - intent: purchase_artwork
+      - action: action_purchase_artwork
+
+  - story: User inquires about online purchasing for artwork
+    steps:
+      - intent: purchase_artwork
+      - action: action_purchase_artwork
+
+
+stories:
+  - story: User asks for information about upcoming contests
+    steps:
+      - intent: contest_information
+      - action: action_contest_information
+
+  - story: User expresses interest in participating in a contest and asks for details
+    steps:
+      - intent: contest_information
+      - action: action_contest_information
+
+  - story: User inquires about any upcoming art contests
+    steps:
+      - intent: contest_information
+      - action: action_contest_information
+
+  - story: User asks about the current contest
+    steps:
+      - intent: contest_information      
+- action: action_contest_information
+
+  - story: User wants to know about art competitions and seeks assistance
+    steps:
+      - intent: contest_information    
+  - action: action_contest_information
+
+  - story: User asks where to find details about the latest contest
+    steps:
+      - intent: contest_information     
+ - action: action_contest_information
+
+  - story: User requests information about ongoing art competitions
+    steps:
+      - intent: contest_information      
+- action: action_contest_information
+
+  - story: User seeks opportunities to showcase their artwork and asks about upcoming contests
+    steps:
+      - intent: contest_information      
+- action: action_contest_information
+
+  - story: User asks for details about the contest schedule
+    steps:
+      - intent: contest_information
+      - action: action_contest_information
+
+  - story: User asks about the requirements for participating in the art contest
+    steps:
+      - intent: contest_information
+      - action: action_contest_information
+
+  - story: User inquires about the registration deadline for the upcoming contest
+    steps:
+      - intent: contest_information
+      - action: action_contest_information
+
+  - story: User asks how to submit their entry for the art competition
+    steps:
+      - intent: contest_information      
+- action: action_contest_information
+
+  - story: User asks about the prizes for the contest winners
+    steps:
+      - intent: contest_information     
+ - action: action_contest_information
+
+  - story: User requests recommendations for art contests suitable for beginners
+    steps:
+      - intent: contest_information     
+ - action: action_contest_information
+
+
+stories:
+  - story: User seeks contact information
+    steps:
+      - intent: contact_information
+      - action: action_provide_contact_information
+
+
+stories:
+  - story: User asks about shipping options
+    steps:
+      - intent: faqs
+        entities:
+          - faq_type: "shipping options"
+      - action: action_provide_faq_answer
+
+  - story: User inquires about tracking their order
+    steps:
+      - intent: faqs
+        entities:
+          - faq_type: "track order"
+      - action: action_provide_faq_answer
+
+  - story: User asks if international shipping is available
+    steps:
+      - intent: faqs
+        entities:
+          - faq_type: "international shipping"
+      - action: action_provide_faq_answer
+
+  - story: User wants to know about the return policy
+    steps:
+      - intent: faqs
+        entities:
+          - faq_type: "return policy"
+      - action: action_provide_faq_answer
+
+  - story: User asks about contacting customer support
+    steps:
+      - intent: faqs
+        entities:
+          - faq_type: "contact customer support"
+      - action: action_provide_faq_answer
+
+
+stories:
+  - story: User asks for general recommendations
+    steps:
+      - intent: recommendations
+      - action: action_provide_general_recommendations
+
+  - story: User requests recommendations for abstract paintings
+    steps:
+      - intent: recommendations
+        entities:
+          - artwork_type: "abstract paintings"
+      - action: action_provide_artwork_recommendations
+
+  - story: User seeks recommendations for landscape artworks
+    steps:
+      - intent: recommendations
+        entities:
+          - artwork_type: "landscape artworks"
+      - action: action_provide_artwork_recommendations
+
+  - story: User asks for recommendations in the impressionism genre
+    steps:
+      - intent: recommendations
+        entities:
+          - artwork_genre: "impressionism"
+      - action: action_provide_artwork_recommendations
+
+  - story: User requests recommendations for contemporary sculptures
+    steps:
+      - intent: recommendations
+        entities:
+          - artwork_type: "contemporary sculptures"
+      - action: action_provide_artwork_recommendations
+
+
+stories:
+  - story: User gives feedback on painting colors
+    steps:
+      - intent: feedback_suggestions
+        entities:
+          - feedback_topic: "painting colors"
+          - feedback_comment: "more vibrant"
+      - action: action_acknowledge_feedback
+
+  - story: User gives feedback on artwork collection variety
+    steps:
+      - intent: feedback_suggestions
+        entities:
+          - feedback_topic: "artwork collection variety"
+          - feedback_comment: "more variety"
+      - action: action_acknowledge_feedback
+
+  - story: User gives feedback on shipping packaging
+    steps:
+      - intent: feedback_suggestions
+        entities:
+          - feedback_topic: "shipping packaging"
+          - feedback_comment: "more secure"
+      - action: action_acknowledge_feedback
+
+  - story: User gives feedback on artwork description accuracy
+    steps:
+      - intent: feedback_suggestions
+        entities:
+          - feedback_topic: "artwork description accuracy"
+          - feedback_comment: "inaccurate"
+      - action: action_acknowledge_feedback
+
+
+stories:
+  - story: User inquires about the availability of a specific painting
+    steps:
+      - intent: artwork_availability
+        entities:
+          - artwork_name: "Sunset by the Beach"
+      - action: action_check_artwork_availability
+
+  - story: User asks about the availability of a specific artwork for purchase
+    steps:
+      - intent: artwork_availability
+        entities:
+          - artwork_name: "Starry Night"
+      - action: action_check_artwork_availability
+
+  - story: User checks if a specific artwork by Salvador Dali is in stock
+    steps:
+      - intent: artwork_availability
+        entities:
+          - artwork_name: "The Persistence of Memory"
+      - action: action_check_artwork_availability
+
+  - story: User inquires about the availability of a sculpture
+    steps:
+      - intent: artwork_availability
+        entities:
+          - artwork_name: "The Thinker"
+      - action: action_check_artwork_availability
+
+
+stories:
+  - story: User asks about the status of their artwork order
+    steps:
+      - intent: order_status
+      - action: action_check_order_status
+
+  - story: User requests an update on the status of their painting order
+    steps:
+      - intent: order_status
+      - action: action_check_order_status
+
+  - story: User wants to know the current status of their artwork delivery
+    steps:
+      - intent: order_status
+      - action: action_check_order_status
+
+  - story: User asks for an update on their order for the artwork
+    steps:
+      - intent: order_status
+      - action: action_check_order_status
+
+  - story: User seeks assistance regarding their order status for the painting
+    steps:
+      - intent: order_status
+      - action: action_check_order_status
+
+stories:
+  - story: User requests assistance with payment options for artwork purchase
+    steps:
+      - intent: payment_assistance
+      - action: action_payment_assistance
+
+  - story: User seeks help with payment plans for buying artwork
+    steps:
+      - intent: payment_assistance
+      - action: action_payment_assistance
+
+  - story: User encounters issues processing payment for artwork
+    steps:
+      - intent: payment_assistance
+      - action: action_payment_assistance
+
+  - story: User inquires about available payment methods for artwork purchase
+    steps:
+      - intent: payment_assistance
+      - action: action_payment_assistance
+
+  - story: User asks about financing options for buying artwork
+    steps:
+      - intent: payment_assistance
+      - action: action_payment_assistance
+
+stories:
+  - story: User requests information about shipping artwork
+    steps:
+      - intent: shipping_information
+      - action: action_shipping_information
+
+  - story: User asks about shipping options for artwork order
+    steps:
+      - intent: shipping_information
+      - action: action_shipping_information
+
+  - story: User inquires about international shipping for artwork
+    steps:
+      - intent: shipping_information
+      - action: action_shipping_information
+
+  - story: User wants to track their artwork shipment
+    steps:
+      - intent: shipping_information
+      - action: action_shipping_information
+
+  - story: User asks about changing the shipping address for artwork order
+    steps:
+      - intent: shipping_information
+      - action: action_shipping_information
+
+
+stories:
+  - story: User asks about custom framing options for artwork
+    steps:
+      - intent: artwork_customization
+      - action: action_artwork_customization
+
+  - story: User inquires about adding a mat border to artwork
+    steps:
+      - intent: artwork_customization
+      - action: action_artwork_customization
+
+  - story: User wants to personalize the frame for their artwork
+    steps:
+      - intent: artwork_customization
+      - action: action_artwork_customization
+
+  - story: User asks about customizing the size of the frame for artwork
+    steps:
+      - intent: artwork_customization
+      - action: action_artwork_customization
+
+  - story: User inquires about changing the color of the frame for artwork
+    steps:
+      - intent: artwork_customization
+      - action: action_artwork_customization
+
+stories:
+  - story: User leaves a positive review about a painting
+    steps:
+      - intent: artwork_reviews
+      - action: action_collect_review
+
+  - story: User expresses satisfaction with an artwork exceeding expectations
+    steps:
+      - intent: artwork_reviews
+      - action: action_collect_review
+
+  - story: User praises the attention to detail in a sculpture
+    steps:
+      - intent: artwork_reviews
+      - action: action_collect_review
+
+  - story: User expresses disappointment with the quality of a print
+    steps:
+      - intent: artwork_reviews
+      - action: action_collect_review
+
+  - story: User complains about artwork arriving damaged
+    steps:
+      - intent: artwork_reviews
+      - action: action_collect_review
+
+
+stories:
+  - story: User seeks information on authenticating artwork
+    steps:
+      - intent: artwork_authentication
+      - action: action_provide_authentication_info
+
+  - story: User wants to verify the authenticity of a painting
+    steps:
+      - intent: artwork_authentication
+      - action: action_provide_authentication_info
+
+  - story: User seeks advice on protecting themselves from buying fake art
+    steps:
+      - intent: artwork_authentication
+      - action: action_provide_authentication_info
+
+  - story: User asks about methods used to authenticate artworks
+    steps:
+      - intent: artwork_authentication
+      - action: action_provide_authentication_info
+
+  - story: User inquires about reputable authentication services
+    steps:
+      - intent: artwork_authentication
+      - action: action_provide_authentication_info
+
+
+stories:
+  - story: User seeks information on preserving oil paintings
+    steps:
+      - intent: artwork_preservation
+      - action: action_provide_preservation_info
+
+  - story: User wants to know best practices for preserving watercolor artworks
+    steps:
+      - intent: artwork_preservation
+      - action: action_provide_preservation_info
+
+  - story: User asks about preserving acrylic paintings
+    steps:
+      - intent: artwork_preservation
+      - action: action_provide_preservation_info
+
+  - story: User seeks advice on preserving charcoal drawings
+    steps:
+      - intent: artwork_preservation
+      - action: action_provide_preservation_info
+
+  - story: User inquires about preserving pastel artworks
+    steps:
+      - intent: artwork_preservation
+      - action: action_provide_preservation_info
+
+  - story: User asks about preserving mixed media artworks
+    steps:
+      - intent: artwork_preservation
+      - action: action_provide_preservation_info
+
+  - story: User seeks information on preserving canvas prints
+    steps:
+      - intent: artwork_preservation
+      - action: action_provide_preservation_info
+
+  - story: User wants advice on preserving ink sketches
+    steps:
+      - intent: artwork_preservation
+      - action: action_provide_preservation_info
+
+  - story: User asks about preserving digital artworks
+    steps:
+      - intent: artwork_preservation
+      - action: action_provide_preservation_info
+
+  - story: User seeks guidance on preserving photographs
+    steps:
+      - intent: artwork_preservation
+      - action: action_provide_preservation_info
+
+  - story: User wants recommendations for preserving sculptures
+    steps:
+      - intent: artwork_preservation
+      - action: action_provide_preservation_info
+
+  - story: User inquires about protecting woodcut prints
+    steps:
+      - intent: artwork_preservation
+      - action: action_provide_preservation_info
+
+  - story: User asks about preserving lithographs
+    steps:
+      - intent: artwork_preservation
+      - action: action_provide_preservation_info
+
+  - story: User seeks product recommendations for preserving art collection
+    steps:
+      - intent: artwork_preservation
+      - action: action_provide_preservation_info
+
+  - story: User asks for resources on artwork preservation techniques
+    steps:
+      - intent: artwork_preservation
+      - action: action_provide_preservation_info
+
+stories:
+  - story: User says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
